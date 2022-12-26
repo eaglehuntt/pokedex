@@ -4,15 +4,11 @@ from upload_video import upload_video
 
 # Connect to local database.
 
-""" DBHOST = input("Server: ")
+DBHOST = input("Server: ")
 DBUSER = input("User: ")
 DBPSSWD = input("Password: ")
 DB = input("Database: ")
- """
-DBHOST = "localhost"
-DBUSER = "root"
-DBPSSWD = "root"
-DB = "pokemon_db"
+
 
 db = mysql.connector.connect(
     host=DBHOST,
