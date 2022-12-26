@@ -152,14 +152,14 @@ cython_debug/
 #.idea/
 
 # All mp3
-.mp3
+*.mp3
 
 #all mp4
-.mp4
+*.mp4
 
 #all json
-.json
+*.json
 
 #all png
-.png
+*.png
 
