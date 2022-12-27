@@ -409,7 +409,7 @@ class Pokemon_info:
     def txt_to_speech(self):
         engine = pyttsx3.init()
         # rate = engine.getProperty('rate')
-        engine.setProperty('rate', 195)
+        engine.setProperty('rate', 210)
         engine.save_to_file(self.script, 'script.mp3')
         engine.runAndWait()
 
