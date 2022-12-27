@@ -394,7 +394,7 @@ class Pokemon_info:
                 highest_stat_more_or_less = "less"
 
             # 's
-            intro_analysis = f" This puts {self.name}'s base stat total approximately  {change}% {more_or_less} than the average stage 1 Pokemon, and its {highest_stat_names} approximately {highest_stat_change}% {highest_stat_more_or_less} than the average stage 1 Pokemon."
+            intro_analysis = f" This puts {self.name}'s base stat total approximately  {change}% {more_or_less} than the average basic Pokemon, and its {highest_stat_names} approximately {highest_stat_change}% {highest_stat_more_or_less} than the average stage 1 Pokemon."
 
         return "".join(intro + self.LegMythBby + type + native_region + evolution +
                        flavor_text_version + flavor_text + catch_rate +
