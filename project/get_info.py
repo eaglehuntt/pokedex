@@ -400,6 +400,8 @@ class Pokemon_info:
                        flavor_text_version + flavor_text + catch_rate +
                        egg_group + intro_to_stats + display_stats + intro_analysis)
 
+        # .join could be slower
+
     def find_increase(self, old, new):
         return round(((new-old)/old) * 100)
 

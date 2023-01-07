@@ -33,8 +33,14 @@ while True:
     }
 
     print(video_data["title"])
-    print("Posting Video in 1 minute...\n")
-    time.sleep(60)
+    print("Posting Video in 1 minute...")
+    time.sleep(15)
+    print("45 seconds...")
+    time.sleep(15)
+    print("30 seconds...")
+    time.sleep(15)
+    print("15 seconds...")
+    time.sleep(15)
     upload_video(video_data)
     print("Uploaded!\nMaking a new video in 24 hours...")
 
