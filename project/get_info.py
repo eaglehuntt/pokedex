@@ -394,11 +394,13 @@ class Pokemon_info:
                 highest_stat_more_or_less = "less"
 
             # 's
-            intro_analysis = f" This puts {self.name}'s base stat total approximately  {change}% {more_or_less} than the average stage 1 Pokemon, and its {highest_stat_names} approximately {highest_stat_change}% {highest_stat_more_or_less} than the average stage 1 Pokemon."
+            intro_analysis = f" This puts {self.name}'s base stat total approximately  {change}% {more_or_less} than the average basic Pokemon, and its {highest_stat_names} approximately {highest_stat_change}% {highest_stat_more_or_less} than the average stage 1 Pokemon."
 
         return "".join(intro + self.LegMythBby + type + native_region + evolution +
                        flavor_text_version + flavor_text + catch_rate +
                        egg_group + intro_to_stats + display_stats + intro_analysis)
+
+        # .join could be slower
 
     def find_increase(self, old, new):
         return round(((new-old)/old) * 100)
@@ -409,7 +411,7 @@ class Pokemon_info:
     def txt_to_speech(self):
         engine = pyttsx3.init()
         # rate = engine.getProperty('rate')
-        engine.setProperty('rate', 195)
+        engine.setProperty('rate', 210)
         engine.save_to_file(self.script, 'script.mp3')
         engine.runAndWait()
 

@@ -1,0 +1,29 @@
+
+
+
+#Different class for each type of video
+
+Egg moves:
+
+
+all_egg_moves = []
+
+for index in moves:
+    if moves[index] **contains an egg move**:
+        all_egg_moves.append(moves[index])
+
+display_moves = [all_egg_moves[random.randint(0,len(egg_moves))]]
+
+while len(display_moves) < 3 or counter < 10:
+    selected_move = random.randint(0,len(egg_moves))
+    if selected_move not in display_moves:
+        display_moves.append(selected_move)   
+    else:
+        counter+=1
+        continue
+
+
+###################
+[] of 3 egg moves
+
+
